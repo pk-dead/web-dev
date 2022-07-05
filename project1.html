@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XYZ Fitness | Register</title>
+</head>
+<style>
+    body{
+        margin:0;
+        color: azure;
+    }
+    #background{
+        width: 100%;
+        
+        z-index: -1;
+        position: absolute;   
+    }
+    
+    header{
+        display: -ms-inline-flexbox;
+       
+    }
+    div{
+        display: inline-flexbox;
+    }
+    .midnav{
+        
+        float:right;
+        margin-right: 100px;
+       
+    }
+    .midnav li .btn:hover, .midnav li .bbtn:hover{
+        color:lavender;
+    }
+
+    .leftnav{
+        /* text-align: left; */
+        float:left;
+     
+    }
+    #pic1{
+        width: 200px;
+        length:200px;
+    }
+    
+    li{
+        display: inline-block;
+        text-decoration: none;
+        padding:20px;
+    }
+    a{
+        font-size: 15px;
+        text-decoration: none;
+        font-family:monospace;
+        color:whitesmoke;
+    }
+    a:hover{
+        color: darkgray;
+        text-decoration: underline;
+    }
+    .formcont{
+        display: inline-block;
+        margin: 230px 10px;
+        width:55%;
+        
+        border:3px solid grey;
+        border-radius: 10px;
+        padding: 20px;
+        font-size: 15px bold;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .formcont .form{
+        padding:0px;
+        margin:auto;
+    }
+    .form input{
+        display: block;
+        width:400px;
+        font-family: 'Lobster', cursive;;
+        border:2px solid rgb(0, 0, 0);
+        border-radius: 6px;
+        padding:10px;
+        margin:auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .form .bbtn{
+        display: block;
+        margin:auto;
+        margin-top: 8px;
+        width: 72px;
+        border: 1px solid black;
+    }
+    .form .bbtn:hover{
+        color:darkgray;
+    }  
+</style>
+
+
+<body>
+    <img id="background" src="https://images.unsplash.com/photo-1605296867724-fa87a8ef53fd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTF8fGZpdG5lc3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+    alt = "">
+    <header>
+        <div class="head">
+            <navbar class="leftnav">
+                <ul>
+                    <img id = "pic1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfZzrCU6RkiLMu_1MvYF2g4B91cIAvngwIUjBmjiGn0NwggqK2HU-2w4OW-MCBnFd2ANQ&usqp=CAU" alt="">
+                </ul>
+            </navbar>
+            
+            <navbar class="midnav">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a</li>
+                    <li><a href="">BMI Calculator</a></li>
+                    <li><button class="btn">Call Us</button></li>
+                    <li><button class="bbtn">Email Us</button></li>
+                </ul>
+            </navbar>
+        </div>
+    </header>
+    
+    <div class="formcont">
+        <h2 align="center">Join Us Now</h2>
+        <form action="" class="form">
+            <div><input type="text" placeholder="Enter First Name"></div>
+            <div><input type="text" placeholder="Enter Last Name"></div>
+            <div><input type="text" placeholder="Enter phone number"></div>
+            <div><input type="text" placeholder="Enter goal"></div>
+            <button class="bbtn">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
