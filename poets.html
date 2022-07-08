@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poets.org | Edgar Allan Poe</title>
+</head>
+<style>
+    body{
+        margin:0px 0px;
+        background-color: #fafafa;
+    }
+    header{
+        margin-top: 0%;
+        display:flex;
+        padding: -1px 15px;
+        background-color: rgba(0, 0, 0, 0.751);
+        margin: 0px 0px;   
+    }
+    #div1 li a,#div2 li a{
+        color:white;
+        text-decoration: none;
+    }
+    #div1 li,#div2 li{
+        list-style: none;
+        display: inline-flex;
+        /* background-color: rgba(0, 0, 0, 0.751); */
+        margin:0px 0px;
+        padding:15px 15px;
+    }
+    #div1 li:hover,#div2 li:hover{
+        background-color: black;
+    }
+    #div2,#div1{
+        display: flex;
+        justify-content: right;
+    }
+    #div2{
+        position: absolute;
+        right: 10px;
+    }
+    .empty{
+        background-color: black;
+        width:100%;
+        padding:30px 10px;
+    }
+    .a1{
+        background-color:black;
+        color: darkturquoise;
+    }
+    .a1:hover{
+        text-decoration: underline;
+    }
+
+    #Donate{
+        background-color: red;
+    }
+    #Donate:hover{
+        background-color: rgba(255, 0, 0, 0.426);
+    }
+    #Mem{
+        background-color:royalblue
+    }
+    #Mem:hover{
+        background-color: black;
+    }
+    .blue{
+        background-image: url(/hero/bg4.jpg);
+    background-position: 50% 50%;
+    background-repeat-y: no-repeat;
+    background-size: cover;
+    }
+    .batwara{
+        display: inline-flex;
+        margin:0px 0px;
+        width: 100%;
+    }
+    .content{
+        margin: 10px 15px;
+        padding:2px 2px;
+        width:70%;
+        margin-top: 26px;
+        font-weight: 400;
+        font-size: 1.2em;
+        font-family: Founders Grotesk,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+        line-height: 1.5;
+        color: #343434
+    }
+    #invert{
+        background-color: royalblue;
+        color:white;
+        padding: 8px 5%;
+        margin-bottom: 10px;
+    }
+    #invert:hover{
+        background-color: white;
+        color:royalblue;
+        border:2px solid royalblue;
+    }
+    #HEAD{
+        font-family: 'Lobster', cursive;
+        font-family: 'Playfair Display', serif; 
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Roboto Slab', serif;
+        margin-bottom: 1%;
+    }
+
+    .right{
+        
+        margin: 15px 25px;
+    }
+    .black{
+        color:royalblue;
+        display: block;
+        font-size: 21px;
+    }
+    .black:hover{
+        text-decoration: underline;
+        color:darkblue;
+    }
+    #RP,#SM{
+        margin-bottom: 12px;
+        font-size: 25px;
+    }
+    #RP{
+        margin-top: 15px;;
+    }
+    #Edgar{
+        border-bottom: 7px solid green;
+        margin-top: 100px;
+    }
+    .img1{
+        width:52%;
+    }
+    .onskypic{
+        display: flex;
+        background-color: skyblue;
+        border-bottom: 5px solid black;
+    }
+    .onskypic #left{
+        margin-left: 47px;
+    }
+    .onskypic #right{
+        width: 10%;
+        margin-top: 112px;
+        margin-left: 234px;
+        margin-bottom: 2px;
+        margin-right: 2px;
+        
+    }
+    .onskypic #left #search{
+        font-size: 24px;
+        font-family: monospace;
+        font-weight:lighter;
+        width:76%;
+        margin-left: 25px;
+        margin-top: 27px;
+        margin-bottom: 38px;
+
+    }
+    .onskypic #left #Poets{
+        margin-left: 25px;
+        margin-top: 32px;
+        margin-bottom: 5px;
+        font-size: 41px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+    }
+    .onskypic #right #searchh{
+        padding:9px 9px;
+        width:212%;
+        margin-top: 1px;
+        margin-bottom: 1px;
+        margin-right: 1px;
+        margin-left: -347px;
+        background-color: grey;
+    }
+    ::placeholder {
+        font-size: 15px;
+        color: lightgrey;
+        opacity: 1; 
+    }
+    
+    #ul{
+        width:224%;
+        list-style: none;
+        margin: 4px -345px;
+        padding:2px 2px;
+        color: #fafafa;
+        background-color: #343434;
+        margin-bottom: 0px;
+    }
+    #ul li{
+        padding: 7px 13px;
+    }
+    #ul a{
+        color:white;
+        text-decoration: none;
+    }
+    #ul li a:hover{
+        color:aqua
+    }
+    #ul li:hover{
+        background-color: black;
+    }
+</style>
+<body>
+<header>
+    <div id="div1">
+    <li class="a1"><a href="" class="a1">Poets.org</a></li>
+    <li><a href="">Academy of American Poets</a></li>
+    <li><a href="">National Poetry Month</a></li>
+    <li><a href="">American Poets Magazine</a></li>
+    </div>
+
+    <div id="div2" align="left">
+        <li id="Login"><a href="">Login</a></li>
+        <li id="Mem"><a href="">Membership</a></li>
+        <li id="Donate"><a href="">Donate</a></li>
+    </div>
+</header>
+
+<div class="empty"></div>
+<div class="onskypic">
+    <div id="left">
+    <img src="data:image/jpeg;base64,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"
+     alt="" class="img1">
+     <p id="Poets">Poets</p>
+     <p id="search">Search more than 3,000 biographies of contemporary and classic poets.</p>
+    </div>
+    <div id="right">
+        <input id="searchh" type="text" placeholder="search">
+        <ul id="ul">
+            <li><a href="">find poems</a></li>
+            <li><a href="">find poets</a></li>
+            <li><a href="">poem-a-day</a></li>
+            <li><a href="">library(texts,books and more)</a></li>
+            <li><a href="">materials for teachers</a></li>
+            <li><a href="">poetry near you</a></li>
+        </ul>
+    </div>
+</div>>
+<div class="batwara">
+<div class="content">
+    <h1 id="HEAD">Edgar Allan Poe</h1>
+    <p id="date">1809–1849</p>
+    <a id="invert" href="">read poem by his poet</a>
+    <p>
+        Edgar Allan Poe was born on January 19, 1809 in Boston. Poe’s father and mother, both professional actors, died before the poet was three years old, and John and Frances Allan raised him as a foster child in Richmond, Virginia. John Allan, a prosperous tobacco exporter, sent Poe to the best boarding schools and, later, to the University of Virginia, where Poe excelled academically. After less than one year of school, however, he was forced to leave the university when Allan refused to pay Poe’s gambling debts.
+
+Poe returned briefly to Richmond, but his relationship with Allan deteriorated. In 1827, Poe moved to Boston and enlisted in the United States Army. His first collection of poems, Tamerlane, and Other Poems (George Redway), was published that year. In 1829, he published a second collection entitled Al Aaraaf, Tamerlane, and Minor Poems (Hatch & Dunning). Neither volume received significant critical or public attention. Following his Army service, Poe was admitted to the United States Military Academy, but he was again forced to leave for lack of financial support. He then moved into the home of his aunt Maria Clemm and her daughter, Virginia, in Baltimore.
+
+Poe began to sell short stories to magazines at around this time, and, in 1835, he became the editor of the Southern Literary Messenger in Richmond, where he moved with his aunt and cousin Virginia. In 1836, he married Virginia, who was thirteen years old at the time. Over the next ten years, Poe would edit a number of literary journals including the Burton’s Gentleman’s Magazine and Graham’s Magazine in Philadelphia and the Broadway Journal in New York City. It was during these years that he established himself as a poet, a short story writer, and an editor. He published some of his best-known stories and poems, including “The Fall of the House of Usher,” “The Tell-Tale Heart,” “The Murders in the Rue Morgue,” and “The Raven.” After Virginia’s death from tuberculosis in 1847, Poe’s lifelong struggle with depression and alcoholism worsened. He returned briefly to Richmond in 1849 and then set out for an editing job in Philadelphia. For unknown reasons, he stopped in Baltimore. On October 3, 1849, he was found in a state of semi-consciousness. Poe died four days later of “acute congestion of the brain.” Evidence by medical practitioners who reopened the case has shown that Poe may have been suffering from rabies.
+
+Poe’s work as an editor, poet, and critic had a profound impact on American and international literature. His stories mark him as one of the originators of both horror and detective fiction. Many anthologies credit him as the “architect” of the modern short story. He was also one of the first critics to focus primarily on the effect of style and structure in a literary work; as such, he has been seen as a forerunner to the “art for art’s sake” movement. French Symbolists such as Stéphane Mallarmé and Arthur Rimbaud claimed him as a literary precursor. Charles Baudelaire spent nearly fourteen years translating Poe into French. Today, Poe is remembered as one of the first American writers to become a major figure in world literature.
+    </p>
+</div>
+<div class="right">
+    <img id="Edgar" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUwijSjpwbtbHsKRxwgaytWCPl6tmfqRCjYA&usqp=CAU" alt=""
+    width="170%">
+    <p id="SM">School Movements</p>
+    <hr opacity="20%">
+    <a class="black" href="">romanticism</a>
+    <p id="RP">Related Poets</p>
+    <a class="black" href="">Walt Whitman</a>
+    <a class="black" href="">Raplh Waldo Emerson</a>
+    <a class="black" href="">Percy Bysshe Shelly</a>
+    <a class="black" href="">Sameul Taylor Coleridge</a>
+    <a class="black" href="">William Wordsworth</a>
+    <a class="black" href="">Alfred Noyes</a>
+</div>
+</div>
+</body>
+</html>
